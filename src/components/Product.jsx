@@ -8,7 +8,7 @@ const Info = styled.div`
   height: 100%;
   position: absolute;
   top: 0;
-  left: 10;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: flex;
@@ -26,11 +26,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 10;
-  background-color: #d0dfff;
+  background-color: #f5fbfd;
   position: relative;
   &:hover ${Info}{
-    opacity: 10;
+    opacity: 1;
   }
 `;
 
@@ -43,7 +42,7 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 75%;
   z-index: 2;
 `;
 

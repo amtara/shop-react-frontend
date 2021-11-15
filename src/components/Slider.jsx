@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ArrowLeft, ArrowRight, ImportExport } from '@material-ui/icons';
+import { ArrowLeft, ArrowRight, ContactSupportOutlined, ImportExport } from '@material-ui/icons';
 import React, { useState } from 'react'
 import { dataItems } from '../data'
 
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     height: 100%;
     display:flex;
     transition: all 1.5s ease;
-  transform: translateX(${(props) => props.slideIndex * -100}vw);
+    transform: translateX(${(props) => props.slideIndex * -100}vw);
 `
 
 const Title = styled.h1`
@@ -82,9 +82,7 @@ const InfoContainer = styled.div`
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
-
     console.log(slideIndex)
-
     const handleClick = (direction) => {
         if (direction === "left") {
             setSlideIndex(slideIndex > 0 ? slideIndex - 1 :  2)
@@ -118,9 +116,6 @@ const Slider = () => {
             <Arrow direction="right" onClick={() => handleClick("right")}>
                 <ArrowRight />
             </Arrow>
-
-       
-
         </Container>
     )
 }

@@ -15,7 +15,6 @@ const Container = styled.div`
 export default function Announcement() {
     return (
         <Container>
-          
            take your 50% free shipping on your next sales with #amazingcode
         </Container>
     )

@@ -17,7 +17,8 @@ padding:10px 20px;
 const Left = styled.div`
 display: flex;
 flex: 1;
-align-items:center ;
+justify-content: flex-start;
+align-items:center;
 `
 
 const Center = styled.div`
@@ -35,10 +36,12 @@ justify-content: flex-end;
 const Language = styled.span`
     font-size: 14px;
     cursor:pointer;
+
 `
 
 const Input = styled.input`
     border: none;
+    outline: none;
 `
 
 const SearchContainer = styled.div`
@@ -51,6 +54,11 @@ const SearchContainer = styled.div`
 
 const Logo = styled.h1`
 font-weight: bold;
+
+.logo:hover {
+    color:blue;
+    cursor:pointer;
+}
 `
 const MenuItem = styled.div`
     font-size:14px; 
@@ -71,7 +79,7 @@ function Navbar() {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>LAMA.  </Logo>
+                    <Logo>MAKA.  </Logo>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>
