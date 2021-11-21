@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { ArrowLeft, ArrowRight, ContactSupportOutlined, ImportExport } from '@material-ui/icons';
 import React, { useState } from 'react'
 import { dataItems } from '../data'
-
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     width: 100%;
@@ -11,6 +11,7 @@ const Container = styled.div`
     background-color: white;
     position: relative;
     overflow:hidden; 
+    ${mobile({display:"none"})}
 `
 
 const Arrow = styled.div`

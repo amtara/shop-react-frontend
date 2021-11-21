@@ -1,8 +1,8 @@
 import { Send } from '@material-ui/icons'
 import styled from 'styled-components'
-
+import {mobile} from '../responsive'
 const Container = styled.div`
-    height:60vh;
+    height:50vh;
     background-color:#fcf5f5;
     display: flex;
     align-items: center;
@@ -13,11 +13,13 @@ const Container = styled.div`
 const Title = styled.h1`
     font-size: 70px;
     margin-bottom: 20px;
+    ${mobile({fontSize:'50px'})}
 `
 const Desc = styled.div`
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 20px;
+    ${mobile({fontSize:'15px'})}
 `
 const InputContainer = styled.div`
     width: 50%;
@@ -45,7 +47,7 @@ const Input = styled.input`
 function Newletter() {
     return (
         <Container>
-            <Title>NewLetter </Title>
+            <Title>Newsletter </Title>
             <Desc>Get Updates from your favorite products</Desc>
             <InputContainer>
                 <Input placeholder="your emails" />
