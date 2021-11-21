@@ -11,9 +11,9 @@ position: relative;
 const Image = styled.img`
 width: 100%;
 height: 100%;
-
 object-fit: cover;
 `
+
 const Information = styled.div`
     position: absolute;
     width:100%;
@@ -23,8 +23,7 @@ const Information = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   flex-direction: column;
-  
+   flex-direction: column;  
 `
 const Title = styled.div`
 color: white; 
